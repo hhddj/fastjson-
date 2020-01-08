@@ -44,7 +44,7 @@ if method=='POST':
     res=requests.post(url, headers=headers,data=args)
     print(res.text)
 elif method=='GET':
-    header = str1[2:]
+    header = str1[1:]
     for i in header:
         header1.append(i.split(': ')[0])
         header2.append(i.split(': ')[1])
@@ -59,8 +59,8 @@ elif method=='GET':
         params[argtest] = argvalue
     except:
         print("参数不存在！使用原数据包发送！")
-    host=params['Host']
-    params.pop('Host')
+    host=headers['Host']
+    headers.pop('Host')
     url = 'http://' + host + path.split('?')[0]
     res=requests.get(url,headers=headers,params=params)
     print(res.text)
