@@ -5,9 +5,6 @@ argtest=sys.argv[1] #需要进行测试的参数
 argvalue=sys.argv[2] #参数值，即poc
 txtpath=sys.argv[3] #txt-request路径
 
-#可将poc修改
-#argvalue='['+argvalue[:-1]
-
 with open(str(txtpath), 'r') as f1:
     str = f1.readlines()
 str1=[]
@@ -35,7 +32,7 @@ if method=='POST':
     else:
         for i in arg:
             arg1.append(i.split('=')[0])
-            arg2.append(i.split('=')[1])
+            aarg2.append(i.split('=')[1])
         args = dict(zip(arg1, arg2))
         args[argtest] = argvalue
     host=headers['Host']
