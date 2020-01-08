@@ -1,0 +1,28 @@
+POST /jwglxt/ws/commonWebs HTTP/1.1
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.88 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.9
+Connection: close
+SOAPAction: 
+Content-Type: text/xml;charset=UTF-8
+Host: 127.0.0.1
+
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:zfs="http://zfsoft.com/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <zfs:queryDataList>
+         <!--type: string-->
+         <bussinessId>gero et</bussinessId>
+         <!--type: string-->
+         <key>sonoras imperio</key>
+         <!--type: string-->
+         <paramJson>hhddj</paramJson>
+         <!--type: int-->
+         <fromNum>3</fromNum>
+         <!--type: int-->
+         <endNum>3</endNum>
+      </zfs:queryDataList>
+   </soapenv:Body>
+</soapenv:Envelope>
