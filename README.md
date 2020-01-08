@@ -19,4 +19,4 @@
 java -jar test.jar
 ```
 
-![image-20200108130014509](/Users/hhddj/learn/tools/fastjson/README.assets/image-20200108130014509.png)
+![shili](./shili.png)
