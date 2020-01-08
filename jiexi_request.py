@@ -6,7 +6,7 @@ argvalue=sys.argv[2] #参数值，即poc
 txtpath=sys.argv[3] #txt-request路径
 
 #可将poc修改
-argvalue='['+argvalue[:-1]
+#argvalue='['+argvalue[:-1]
 
 with open(str(txtpath), 'r') as f1:
     str = f1.readlines()
