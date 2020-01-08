@@ -19,4 +19,4 @@
 java -jar test.jar
 ```
 
-![shili](./shili.png)
+![shili](https://tva1.sinaimg.cn/large/006tNbRwly1gap2ldgxd7j31gq0nkgt8.jpg)
